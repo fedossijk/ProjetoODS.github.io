@@ -1,0 +1,42 @@
+html, body,{
+    margin: 0;
+}
+body {
+    background-color: yellow;
+}
+#imagens.download {
+    background: url("download.jpg");
+    height: 50%;
+    text-align: center;
+    background-image: cover;
+}
+.icone {
+    width: 100px;
+}
+p {
+    text-align: justify;
+    font-size: 28 px;
+    
+}
+h1 {
+    font-size: 30px;
+}
+h2, h3, h4, h5 {
+    text-align: center;
+    font-size: 25px;
+}
+.coluna {
+    float: left;
+    padding: 0 10%;
+    position: relative;
+    width: 100%;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.centralizado {
+    text-align: center;
+}
+
+
