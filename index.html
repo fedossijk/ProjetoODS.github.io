@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Cidades  e Comunidades Sustentáveis</title>
+        <meta name="viewport" content="widht:device-widht, initial-scale=1.0">
         <style>
             body {
                 font-family: sans-serif;
@@ -10,6 +11,32 @@
                 font-size: 20px;
                 box-sizing: border-box;
             }
+            header {
+                background-color: black;
+                color: white;
+                height: 30x;
+                width:  100%;
+            }
+            #globo {
+                width: 106px;
+                position: relative;
+                top: 10px;
+                margin-left: 5%;
+            }
+            #menu {
+                float: right;
+                margin-right: 5%;
+                list-style: none;
+                display: flex;
+            }
+            ul {
+                float: right;
+                padding: 10 20 20 10;
+            }
+            li {
+                list-style: none;
+                text-align: center;
+            }
             h1 , h5 {
                 background-color: rgb(40, 238, 40);
                 text-align: center;
@@ -17,7 +44,7 @@
                 margin-bottom: 0%;
                 padding: 25px;
                 border: 5px solid black; 
-                font-size: 40;
+                font-size: 30;
             }
             p {
                 font-family:Arial, Helvetica, sans-serif;
@@ -31,7 +58,6 @@
                 text-align: right;
                 width: auto;
                 margin: 5px;
-
             }
             h2 {
                 text-align: center;
@@ -46,9 +72,9 @@
                 font-size: 30;
             }
             .imgcentral {
-                width: 80%;
+                width: 60%;
                 position: relative;
-                height: 80%;
+                height: 30%;
                 margin-top: 10px;
                 margin-right: 1px;
                 margin-left: 20px;
@@ -70,10 +96,29 @@
                 text-decoration: underline;
                 text-align: center;
             }
+            @media all and (max-widht: 768px) {
+                #menu{
+                    visibility: hidden;
+            }
+            .colunatres {
+                display: block;
+                padding: 0;
+                margin: 10px auto;
+                float: none;
+            }
         </style>    
         <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
+        <header>
+            <img id="globo" src="Imagens/globo.jpg" alt="Planeta Sustentável"/>
+            <ul id="menu">
+                <li>Objetivos</li>
+                <li>Programas</li>
+                <li>Comunidades</li>
+                <li>Sobre</li>
+            </ul>
+        </header>
        <img class="imgcentral" src="imagens/download.jpg"/>
        <h1><i>Cidades e Comunidades Sustentáveis</i></h1> 
        <h2><b>Objetivo da ODS: Tornar as cidades e os assentamentos humanos inclusivos e sustentáveis.</b></h2>
@@ -89,12 +134,9 @@
         <h4>Programa Cidades Sustentáveis: o que é e quais os 12 eixos temáticos do PCS</h4>
     <p> O Programa Cidades Sustentáveis (PCS) se trata de uma agenda de sustentabilidade urbana que abrange questões sociais, políticas, ambientais, econômicas e culturais no planejamento municipal.O Programa Cidades Sustentáveis oferece ferramentas e metodologias de apoio à gestão pública e ao planejamento urbano integrado. Por sua vez, para organizar todas essas práticas e ações discutidas. O PCS se estrutura em 12 eixos temáticos, alinhados aos Objetivos de Desenvolvimento Sustentável (ODS), das Nações Unidas, sendo eles:</p>
     <ol>
-        <li>
-            Ação local para saúde;</li>
-        <li>
-            Bens naturais comuns;</li>
-        <li>
-            Consumo responsável e opções de estilo de vida;</li>
+        <li> Ação local para saúde;</li>
+        <li>Bens naturais comuns;</li>
+        <li>Consumo responsável e opções de estilo de vida;</li>
         <li>
             Cultura para a sustentabilidade;</li>
         <li>
@@ -143,9 +185,10 @@
     <section id="sobre" class="destaque">
           <h6>Sobre mim</h6>
           <p>Jéssika Antunes Fedossi</p>
-          <p>Iniciante na área de Desenvolvedora Front-End, com grandes projetos a serem realzados</p>
+          <p>Meu primeiro Projeto desenvolvido durante o Curso de Desenvolvimento Front-End no Elas na Tech 2023 pomovido pela JA Brasil.</p>
+          <p> Créditos</p>
+        Imagens de Freepik e Pinterest
           <img widht="100%"  src="Imagens/mulhertec.jpg" alt="mulhertech"/>
-        </div>
     </section>
     </body>
 </html>
