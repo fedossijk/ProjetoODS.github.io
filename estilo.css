@@ -2,7 +2,7 @@ html, body,{
     margin: 0;
 }
 body {
-    background-color: yellow;
+    background-color: rgb(243, 243, 54)
 }
 #imagens.download {
     background: url("download.jpg");
@@ -15,8 +15,7 @@ body {
 }
 p {
     text-align: justify;
-    font-size: 28 px;
-    
+    font-size: 28 px;    
 }
 h1 {
     font-size: 30px;

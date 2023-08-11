@@ -14,11 +14,12 @@
             header {
                 background-color: black;
                 color: white;
-                height: 30x;
+                height: 70px;
                 width:  100%;
+                position:static;
             }
             #globo {
-                width: 106px;
+                width: 96px;
                 position: relative;
                 top: 10px;
                 margin-left: 5%;
@@ -31,11 +32,15 @@
             }
             ul {
                 float: right;
-                padding: 10 20 20 10;
             }
             li {
                 list-style: none;
                 text-align: center;
+                padding: 10px 20px 10px 20px;
+                margin-top: 0px;
+            }
+            li:hover {
+                background-color: rgb(40, 238, 40);
             }
             h1 , h5 {
                 background-color: rgb(40, 238, 40);
@@ -48,7 +53,7 @@
             }
             p {
                 font-family:Arial, Helvetica, sans-serif;
-                text-align: justify;
+                text-align: center;
                 margin: 5%;
                 padding: 4px;
                 font-size: 20;
@@ -61,20 +66,26 @@
             }
             h2 {
                 text-align: center;
+                text-decoration: underline;
             }
             h3 {
-                text-align: right;
-                font-size: 35;
-                width: 60%;
+                text-align: left;
+                font-size: 20;
+                width: 80%;
             }
-            h4, h5, h6 {
+            h4, h5 {
                 text-align: center;
                 font-size: 30;
+                text-decoration: underline;
+            }
+            h6 {
+                font-size: 20;
+                text-align: justify;
             }
             .imgcentral {
-                width: 60%;
+                width: 100%;
                 position: relative;
-                height: 30%;
+                height: 60%;
                 margin-top: 10px;
                 margin-right: 1px;
                 margin-left: 20px;
@@ -82,29 +93,42 @@
                 padding: 5px;
                 padding: 10px 5px 5px 10px;
             }
+            .colunadois{
+                float: left;
+                padding: 0 5%;
+                width: 40%;
+                text-align: left;
+                display: flex;
+            }
             .colunatres {
                 float: right;
-                padding: 0 5%;
+                padding: 0%;
                 position: relative;
-                widht: 60%;
+                width: 60%;
+                margin: 0px;
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-content: center;
+                row-gap: 10px;
+                column-gap: 10px;
+                padding: 16px;
+                border: 5px solid black;
+                background-color: rgb(40, 238, 40)
             }
             .centralizado {
-                text-align: center;
+                text-align: center;      
             }
-            .destaque {
-                float: right;
-                text-decoration: underline;
-                text-align: center;
+            @media all and (max-widht: 768px)
+            #menu{
+                visibility: hidden;
             }
-            @media all and (max-widht: 768px) {
-                #menu{
-                    visibility: hidden;
-            }
-            .colunatres {
-                display: block;
-                padding: 0;
-                margin: 10px auto;
-                float: none;
+            footer {
+                background-color: rgb(40, 238, 40);
+                float: left;
             }
         </style>    
         <link rel="stylesheet" href="estilo.css">
@@ -113,83 +137,88 @@
         <header>
             <img id="globo" src="Imagens/globo.jpg" alt="Planeta Sustentável"/>
             <ul id="menu">
-                <li>Objetivos</li>
-                <li>Programas</li>
-                <li>Comunidades</li>
-                <li>Sobre</li>
+                <li><a href="#Objetivo">Objetivo</a></li>
+                <li><a href="#Programas">Programas</a></li>
+                <li><a href="#Comunidades">Comunidades</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
             </ul>
         </header>
-       <img class="imgcentral" src="imagens/download.jpg"/>
-       <h1><i>Cidades e Comunidades Sustentáveis</i></h1> 
-       <h2><b>Objetivo da ODS: Tornar as cidades e os assentamentos humanos inclusivos e sustentáveis.</b></h2>
-    <p>
-        Cidade sustentável é aquela que adota uma série de práticas inteligentes e eficientes para a melhoria da qualidade de vida da população, promovendo ao mesmo tempo o desenvolvimento econômico e a preservação do meio ambiente.
-        Dentro destas cidades e comunidades sustentáveis as ações e programas que fazem parte das políticas públicas funcionam e são bem administradas. As esferas da educação, saúde, trabalho, lazer, assistência social, meio ambiente, cultura, moradia e transporte andam de mãos dadas e resultam em uma sociedade muito mais justa e sustentável.
-    </p> 
-       <h3><b>Confira no YouTube mais detalhes sobre as cidades sustentáveis:</b>
-       <a id="acao" href="https://youtu.be/M5DH4RWmmyo" target="_blanck">Assista</a>
-    <section id="Programa">
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/M5DH4RWmmyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
-        <h4>Programa Cidades Sustentáveis: o que é e quais os 12 eixos temáticos do PCS</h4>
-    <p> O Programa Cidades Sustentáveis (PCS) se trata de uma agenda de sustentabilidade urbana que abrange questões sociais, políticas, ambientais, econômicas e culturais no planejamento municipal.O Programa Cidades Sustentáveis oferece ferramentas e metodologias de apoio à gestão pública e ao planejamento urbano integrado. Por sua vez, para organizar todas essas práticas e ações discutidas. O PCS se estrutura em 12 eixos temáticos, alinhados aos Objetivos de Desenvolvimento Sustentável (ODS), das Nações Unidas, sendo eles:</p>
-    <ol>
-        <li> Ação local para saúde;</li>
-        <li>Bens naturais comuns;</li>
-        <li>Consumo responsável e opções de estilo de vida;</li>
-        <li>
-            Cultura para a sustentabilidade;</li>
-        <li>
-            Do local para o global;</li>
-        <li>
-            Economia local, dinâmica, criativa e sustentável;</li>
-        <li>
-            Educação para a sustentabilidade e qualidade de vida;</li>
-        <li>
-            Equidade, justiça social e cultura de paz</li>
-        <li>
-            Gestão local para a sustentabilidade;</li>
-        <li>
-            Governança;</li>
-        <li>
-            Melhor mobilidade, menos tráfego;</li>
-        <li>
-            Planejamento e desenho urbano.</li>
-    </ol>
-        <div>
+            <h1><i>Cidades e Comunidades Sustentáveis</i></h1>
+            <img class="imgcentral" src="imagens/download.jpg"/>
+            <h2><b>Objetivo da ODS: Tornar as cidades e os assentamentos humanos inclusivos e sustentáveis.</b></h2>
+            <p>
+            Cidade sustentável é aquela que adota uma série de práticas inteligentes e eficientes para a melhoria da qualidade de vida da população, promovendo ao mesmo tempo o desenvolvimento econômico e a preservação do meio ambiente.
+            Dentro destas cidades e comunidades sustentáveis as ações e programas que fazem parte das políticas públicas funcionam e são bem administradas. As esferas da educação, saúde, trabalho, lazer, assistência social, meio ambiente, cultura, moradia e transporte andam de mãos dadas e resultam em uma sociedade muito mais justa e sustentável.</p>
+            <h3><b>Confira no YouTube mais detalhes sobre as cidades sustentáveis:</b>
+            <a id="acao" href="https://youtu.be/M5DH4RWmmyo" target="_blanck">Assista</a>
+        <section id="Programa">
+            <iframe width="250" height="250" src="https://www.youtube.com/embed/M5DH4RWmmyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+            <h4>Programa Cidades Sustentáveis: o que é e quais os 12 eixos temáticos do PCS</h4>
+            <p> O Programa Cidades Sustentáveis (PCS) se trata de uma agenda de sustentabilidade urbana que abrange questões sociais, políticas, ambientais, econômicas e culturais no planejamento municipal.O Programa Cidades Sustentáveis oferece ferramentas e metodologias de apoio à gestão pública e ao planejamento urbano integrado. Por sua vez, para organizar todas essas práticas e ações discutidas.<hr> O PCS se estrutura em 12 eixos temáticos, alinhados aos Objetivos de Desenvolvimento Sustentável (ODS), das Nações Unidas, sendo eles:</p>
+        <ol>
+            <li> Ação local para saúde;</li>
+            <li>Bens naturais comuns;</li>
+            <li>Consumo responsável e opções de estilo de vida;</li>
+            <li>Cultura para a sustentabilidade;</li>
+            <li>Do local para o global;</li>
+            <li>Economia local, dinâmica, criativa e sustentável;</li>
+            <li>Educação para a sustentabilidade e qualidade de vida;</li>
+            <li>Equidade, justiça social e cultura de paz</li>
+            <li>Gestão local para a sustentabilidade;</li>
+            <li>Governança;</li>
+            <li>Melhor mobilidade, menos tráfego;</li>
+            <li>Planejamento e desenho urbano.</li>
+        </ol>
+     <div>
         <h5><i>Como São as Comunidades Sustentáveis</i></h5>
         <p>A ideia principal desses lugares é diminuir o impacto sobre o meio ambiente e ainda garantir uma boa qualidade de vida. Pessoas que decidem viver uma comunidade sustentável acreditam que a criação do lixo pela humanidade e o consumo atual não estão sendo bons para a Terra. Uma consciência que é fundamentada, o World Wildlife Fund revelou que nos dias de hoje, os recursos são consumidos 25% mais rápido do que levaria para ser renovado. Com outros dados alarmantes, nesse caminhar, em 2050, precisaremos de um outro planeta para conseguir viver.
         O objetivo das comunidades sustentáveis é mudar essa previsão e principalmente, mudar o modo em que o ser humano se relaciona com o meio ambiente.
         Principais Características das Comunidades Sustentáveis
         </p>
+        <main class="container">
         <div class="colunatres">
         <img src="imagens/mulher.jpg"/>
         </div>
         <div class="colunatres">
         <img src="imagens/plantando.jpg"/>
         </div>
-    </div>
-     <p>  Em geral, as comunidades sustentáveis buscam reduzir o consumo, diminuir a quantidade de lixo produzido e preservar o espaço aberto.
-    Nas comunidades sustentáveis os recursos não são gastos mais rápido do que podem ser repostos. Assim como não produzem nenhum tipo de desperdício.
-    Existem comunidades sustentáveis mais radicais que as outras, que por exemplo, procuram se desvincular de qualquer serviço público e não querem nenhum dinheiro proveniente do governo.
-    O bairro é projetado para atender as ideias da comunidade sustentável e o uso da bicicleta é priorizado. Pois, para eles, menos carros circulando significa diminuir o uso de gasolina e dos gases poluidores.
-    As comunidades também possuem espaço para incentivar os moradores a trabalharem em conjunto para o grupo.
-    Algumas comunidade sustentáveis loteiam uma parte do espaço para uso comercial e fazendo com que o lugar se torne auto-suficiente, sendo assim, os moradores compram o que precisam no mesmo lugar.
-    O projeto de comunidade sustentável é definido como viver-trabalhar-brincar no mesmo lugar e com um bom relacionamento com o meio ambiente. 
-    </p>
-    <h5> As cidades mais sustentáveis do Brasil são: Paragominas (PA),João Pessoa (PB), Curitiba (PR), Extrema (MG), Santana de Parnaíba (SP), Londrina (PR).</h5>
-    <p>O meio ambiente tem sofrido interferências prejudiciais por conta do modo de vida do ser humano. Nas grandes cidades os danos são ainda maiores. Fica claro que temos uma sociedade desigual no que diz respeito a atitudes mais corretas com o meio ambiente.
-    São inúmeros os cuidados que devem fazer parte do cotidiano da população. È imprescindível o descarte correto de resíduos e o reúso de água e um alerta para um consumo consciente. É preciso pensar em embalagens que causem menos impacto e comprar somente o que vai ser consumido em determinado período, com o objetivo de evitar que os alimentos estraguem e tenham de ser descartados.
-    As pessoas precisam sair de suas zonas de conforto e entender  a importância de investimentos em educação e conscientização da população, visando ações mais sustentáveis.Só assim estaremos no rumo certo para conquistarmos um planeta sustentável e equilibrado para as novas gerações.
-    </p>
-    <section id="sobre" class="destaque">
+        <div class="colunatres">
+        <img src="imagens/planta.jpg"/>
+        </div>
+        <div class="colunatres">
+        <img src="imagens/menina.jpg"/>
+        </div>
+        </main>
+        <p>  Em geral, as comunidades sustentáveis buscam reduzir o consumo, diminuir a quantidade de lixo produzido e preservar o espaço aberto.
+        Nas comunidades sustentáveis os recursos não são gastos mais rápido do que podem ser repostos. Assim como não produzem nenhum tipo de desperdício.
+        Existem comunidades sustentáveis mais radicais que as outras, que por exemplo, procuram se desvincular de qualquer serviço público e não querem nenhum dinheiro proveniente do governo.
+        O bairro é projetado para atender as ideias da comunidade sustentável e o uso da bicicleta é priorizado. Pois, para eles, menos carros circulando significa diminuir o uso de gasolina e dos gases poluidores.
+        As comunidades também possuem espaço para incentivar os moradores a trabalharem em conjunto para o grupo.
+        Algumas comunidade sustentáveis loteiam uma parte do espaço para uso comercial e fazendo com que o lugar se torne auto-suficiente, sendo assim, os moradores compram o que precisam no mesmo lugar.
+        O projeto de comunidade sustentável é definido como viver-trabalhar-brincar no mesmo lugar e com um bom relacionamento com o meio ambiente. 
+       </p>
+       <h5> As cidades mais sustentáveis do Brasil são: Paragominas (PA),João Pessoa (PB), Curitiba (PR), Extrema (MG), Santana de Parnaíba (SP), Londrina (PR).</h5>
+       <p>O meio ambiente tem sofrido interferências prejudiciais por conta do modo de vida do ser humano. Nas grandes cidades os danos são ainda maiores. Fica claro que temos uma sociedade desigual no que diz respeito a atitudes mais corretas com o meio ambiente.
+       São inúmeros os cuidados que devem fazer parte do cotidiano da população. È imprescindível o descarte correto de resíduos e o reúso de água e um alerta para um consumo consciente. É preciso pensar em embalagens que causem menos impacto e comprar somente o que vai ser consumido em determinado período, com o objetivo de evitar que os alimentos estraguem e tenham de ser descartados.
+       As pessoas precisam sair de suas zonas de conforto e entender  a importância de investimentos em educação e conscientização da população, visando ações mais sustentáveis.Só assim estaremos no rumo certo para conquistarmos um planeta sustentável e equilibrado para as novas gerações.
+       </p>
+        <section id="sobre" class="destaque">
+    <div class="colunadois">
           <h6>Sobre mim</h6>
           <p>Jéssika Antunes Fedossi</p>
-          <p>Meu primeiro Projeto desenvolvido durante o Curso de Desenvolvimento Front-End no Elas na Tech 2023 pomovido pela JA Brasil.</p>
-          <p> Créditos</p>
-        Imagens de Freepik e Pinterest
-          <img widht="100%"  src="Imagens/mulhertec.jpg" alt="mulhertech"/>
-    </section>
+          <p1>Meu primeiro Projeto desenvolvido durante o Curso de Desenvolvimento Front-End no Elas na Tech 2023 pomovido pela JA Brasil.</p1>
+    </div> 
+    <div class="colunadois">
+          <img widht="40%" height="30%" src="Imagens/mulhertec.jpg" alt="mulhertech"/>
+    </div>    
+        </section>
+        <main class="container">
+        <p><b>Meu pimeiro site</b></p>
+        <p><b>Projeto criado e desenvolvido durante o Curso de Introdução ao HTML e CSS.</b></p>
+        <p><b>Créditos:</b></p>
+        <p><b>Imagens de Freepik e Pinterest</b></p>
+        </main>
     </body>
 </html>
 
